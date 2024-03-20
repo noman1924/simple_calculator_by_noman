@@ -4,7 +4,9 @@
   "description": "Made by noman",
   "main": "index.js",
   "type": "module",
-  "bin": "index.js",
+  "bin": {
+    "noman_simplecalculator": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
