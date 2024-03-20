@@ -1,0 +1,23 @@
+// step 1, Example of programming using cmd prompt
+ npx firequiz
+//  see how simple is to use question and answer session.
+// step 2, Lets start the project for calculator by addon insert in package and configjson
+ npm init   // for package.json
+ npm --init // for tsconfig.json
+ //step 3, install module in package
+ npm i inquirer // for new module
+ npm i --save-dev @types/inquirer //for types recall in the module
+// step4, now start writing a program 
+    // sub step import all module
+    import inquirer from "inquirer"
+    // lets understand objects, list, calling list/object, and inquirer.prompt()
+    let a=[1,2,3]
+    let b={key:"answer", key2:"answer2"}
+    // use extension to neet your code, use prettier or + extension
+    // use maths symbols(\u2212 for minus,\xD7 for X,\xF7 for div,
+    \xAF for - in ss, \xB9 for 1 in ss,\xB2 3 for 2,3 in ss, \u02c6 for ^ modifier  ) 
+    //goto http://www.javascripter.net/faq/mathsymbols.htm
+//put on conditions using conditional statements
+
+// let a= { message: "Enter first number", type: "number", name: "firstnumber" }
+// let b=[1,2,3]
