@@ -19,5 +19,8 @@
     //goto http://www.javascripter.net/faq/mathsymbols.htm
 //put on conditions using conditional statements
 
+
+
+
 // let a= { message: "Enter first number", type: "number", name: "firstnumber" }
 // let b=[1,2,3]

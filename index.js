@@ -1,10 +1,8 @@
 #! usr/bin/env node
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // the above is called shabang // aws codewhisperer
-var inquirer_1 = require("inquirer");
+import inquirer from "inquirer";
 console.log("Hi! Welcome to Noman's_Calculator");
-var answer1 = await inquirer_1.default.prompt([
+const answer1 = await inquirer.prompt([
     {
         message: "SelectOpertationYouWantToPerformOfTwoNumbers",
         type: "list",
@@ -12,9 +10,9 @@ var answer1 = await inquirer_1.default.prompt([
         choices: [" + ", " \u2212 ", " \xD7 ", " \xF7 ", " \xAF\xB9 ", " \u02c6 "],
     },
 ]);
-var answer2;
+let answer2;
 if (answer1.operator === " \u02c6 ") {
-    answer2 = await inquirer_1.default.prompt([
+    answer2 = await inquirer.prompt([
         {
             message: "UsePowerOf(use 0~100 or decimal or \u2212 numbers) ^",
             type: "number",
@@ -24,7 +22,7 @@ if (answer1.operator === " \u02c6 ") {
     ]);
 }
 else {
-    answer2 = await inquirer_1.default.prompt([
+    answer2 = await inquirer.prompt([
         { message: "Enter first number", type: "number", name: "firstnumber" },
         { message: "Enter Second number", type: "number", name: "secondnumber" },
     ]);
@@ -52,3 +50,4 @@ else if (answer1.operator === " \xAF\xB9 ") {
 else if (answer1.operator === " \u02c6 ") {
     console.log("your answers is: ", Math.pow(answer2.singlenumber, answer2.powerOf));
 }
+console.log("thankyou4using");

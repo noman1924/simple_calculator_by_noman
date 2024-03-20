@@ -28,7 +28,6 @@ if (answer1.operator === " \u02c6 ") {
       { message: "Enter Second number", type: "number", name: "secondnumber" },
     ]);
 }
-
 if (
   Number.isNaN(answer2.firstnumber) ||
   Number.isNaN(answer2.secondnumber) ||
@@ -48,6 +47,6 @@ if (
 } else if (answer1.operator === " \u02c6 ") {
   console.log(
     "your answers is: ",
-    Math.pow(answer2.singlenumber, answer2.powerOf)
-  );
+    Math.pow(answer2.singlenumber, answer2.powerOf));
 }
+console.log("thankyou4using")
