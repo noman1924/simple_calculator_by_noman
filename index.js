@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 // the above is called shabang // aws codewhisperer
 import inquirer from "inquirer";
 console.log("Hi! Welcome to Noman's_Calculator");
